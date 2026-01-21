@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Insights Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Investment Insights</h1>
+            <p class="tagline">Making sense of markets and money</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search posts..." class="search-box">
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-category="all">All Posts</button>
+            <button class="filter-btn" data-category="stocks">Stocks</button>
+            <button class="filter-btn" data-category="crypto">Crypto</button>
+            <button class="filter-btn" data-category="etfs">ETFs</button>
+            <button class="filter-btn" data-category="real-estate">Real Estate</button>
+            <button class="filter-btn" data-category="retirement">Retirement</button>
+        </div>
+
+        <div id="postsContainer" class="posts-grid">
+            <!-- Posts will be dynamically inserted here -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No posts found matching your search.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Investment Insights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="posts-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
